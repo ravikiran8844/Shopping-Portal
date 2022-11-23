@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizaah Assignment By Ravi Kiran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+      <div class="header">
+        <div id="productImages">
+            <div class="imagesCard">
+                <img class="image1" src="./images/Rectangle 1.png">
+                <img class="image2" src="./images/Rectangle 2.png">
+                <img class="image3" src="./images/Rectangle 3.png">
+                <img class="image4" src="./images//Rectangle 4.png">
+            </div>
+        </div>
+        <div id="mobileImages">
+            <img id="mobileImg" src="./images/Rectangle 1.png">
+            <div class="btnMobileContainer">
+            <button onclick={firstImage()}>o</button>
+            <button onclick={secondImage()}>o</button>
+            <button onclick={thirdImage()}>o</button>
+            <button onclick={fourthImage()}>o</button>
+            </div>
+        </div>
+        <div id="clothingCard">
+            <div>
+                <p class="greyText">CLOTHING</p>
+                <h1>RIBAINE LS TOP - CHOCOLATE</h1>
+                <p>$38.20</p>
+                <p class="greyText">inclusive of all taxes</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p id="selectedColor">COLOR: Brown</p>
+            </div>
+            <div id="colorSelectBoxes">
+                <div onclick={brown()} class="colorBox">
+                    <img src="./images/Ellipse 1.png">
+                </div>
+                <div onclick={green()} class="colorBox">
+                    <img src="./images/Ellipse 2.png">
+                </div>
+                <div onclick={purple()} class="colorBox">
+                    <img src="./images/Ellipse 3.png">
+                </div>
+                <div onclick={blue()} class="colorBox">
+                    <img src="./images/Ellipse 4.png">
+                </div>
+            </div>
+            <p id="selectedSize">SIZE:XS</p>
+            <div id="sizeBoxes">
+                <div onclick={xs()} class="sizeBox">
+                    <p>XS</p>
+                </div>
+                <div onclick={s()} class="sizeBox">
+                    <p>S</p>
+                </div>
+                <div onclick={m()} class="sizeBox">
+                    <p>M</p>
+                </div>
+                <div onclick={l()} class="sizeBox">
+                    <p>L</p>
+                </div>
+                <div onclick={xl()} class="sizeBox">
+                    <p>XL</p>
+                </div>
+            </div>
+
+            <div class="addbtn">
+                <div class="itemsCount">
+                    <button onclick={decrement()} id="minusButton">-</button>
+                    <p id="itemCount">1</p>
+                    <button onclick={increment()} id="plusButton">+</button>
+                </div>
+                    <button onclick={addToCart()} class="addtoCart">ADD TO CART</button>  
+                </div>
+                    <button class="buyNow">BUY IT NOW</button>
+                <div class="iconsBoxes">
+                    <div class="iconBox">
+                        <img src="./images/materials.png" >
+                        <p>Materials</p>
+                    </div>
+                    <div class="iconBox">
+                        <img src="./images/shipping.png" >
+                        <p>Shipping & Returns</p>
+                    </div>
+                    <div class="iconBox">
+                        <img src="./images/care.png" >
+                        <p>Care Guide</p>
+                    </div>
+                </div>
+        </div>
+      </div>
+        <div class="moneybackcard">
+            <h3>
+                THE PERFECT FIT OR YOUR MONEY BACK
+            </h3>
+            <p>We understand that creating your custom size can feel daunting. But not to worry, it's actually quite easy and completely risk-free. If you're not 100% happy with your fit, we'll remake your first shirt from scratch free of charge or give your money back.</p>
+            <div>
+                <button>CREATE YOUR DESIGN</button>
+            </div>
+        </div>
+        <footer>
+            <p class="productFeatures">PRODUCT FEATURES</p>
+            <div class="footerBoxes">
+                <div class="footerBox">
+                    <div>
+                        <img src="./images/Rectangle 20.png" >
+                    </div>
+                    <p>TAB FRONT WITH BUTTON</p>
+                    <p>Fashion to me has become very disposable; I wanted to get back to craft, to clothes that could last.</p>
+                </div>
+                <div class="footerBox">
+                    <div>
+                        <img src="./images/Rectangle 21.png" >
+                    </div>
+                    <p>CARBON FOOTPRINT</p>
+                    <p>Never in the history of the world have women been more in control of their destiny.</p>
+                </div>
+                <div class="footerBox">
+                    <div>
+                        <img src="./images/Rectangle 22.png" >
+                    </div>
+                    <p>PROVENANCE JOURNEY</p>
+                    <p>Fashion to me has become very disposable; I wanted to get back to craft, to clothes that could last.</p>
+                </div>
+                <div class="footerBox">
+                    <div>
+                        <img src="./images/Rectangle 23.png" >
+                    </div>
+                    <p>MADE IN PORTUGAL</p>
+                    <p>Never in the history of the world have women been more in control of their destiny.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
